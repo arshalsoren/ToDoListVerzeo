@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="shortcut icon" href="pencil.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>ToDo List</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1 id="title">To-Do List</h1>
+        <h2 id="subtitle">Verzeo Web Development Project</h2>
+    </header>
+
+    <!-- Add button for New Task -->
+    <button class="material-icons add-btn" id="add-btn" onclick="togglePopup()">add</button>
+
+    <!-- Container and Popup for New Task -->
+    <div class="popup-container" id="popup-container">
+        <div class="popup"></div>
+        <div class="create-task" id="create-task">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h2>Create New Task</h2>
+            <form class="form" id="form">
+                <input type="text" id="input" class="input" placeholder="Enter Task" autocomplete="off" required/>
+                <h4 class="priority-text">Select Task Priority</h4>
+                <select class="priority-dropdown" id="priority">
+                    <option value=”high”>High</option>
+                    <option value=”mid”>Medium</option>
+                    <option value=”low”>Low</option>
+                </select><br />
+                <input type="submit" value="Save Task" class="save-task" onclick="togglePopup()" />
+            </form>
+        </div>
+    </div>
+
+    <!-- Container for task lists -->
+    <div class="container">
+        <div class="high">
+            <h2>HIGH</h2>
+            <ul class="tasks-high" id="tasks-high"></ul>
+        </div>
+        <div class="mid">
+            <h2>MEDIUM</h2>
+            <ul class="tasks-mid" id="tasks-mid"></ul>
+        </div>
+        <div class="low">
+            <h2>LOW</h2>
+            <ul class="tasks-low" id="tasks-low"></ul>
+        </div>
+    </div>
+
+    <!-- Instructions -->
+    <small>
+        Left-click to toggle complete.&emsp13;
+        Right-click to remove task.&emsp13;
+        Refresh to unmark all tasks.&emsp13;
+    </small>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Made with <heart class="heart">♥</heart> and open-sourced
+        </h2>
+    </footer>
+</body>
+
+</html>
