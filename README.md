@@ -19,4 +19,4 @@
 
 
 Created as a major project for my internship under Verzeo.
-Go to [here](https://htmlpreview.github.io/?https://github.com/HDhyan0912/ToDoListVerzeo/blob/main/main.html) to preview the website.
+Go [here](https://arshalsoren-todolist-verzeo.netlify.app/) to preview the website.
