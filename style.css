@@ -285,29 +285,3 @@ footer {
     width: 100%;
     margin: auto;
 }
-
-.heart {
-    color: red;
-    animation-name: hearticon;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes hearticon {
-    0% {
-        opacity: 100%;
-    }
-    25% {
-        opacity: 50%;
-    }
-    50% {
-        opacity: 0%;
-    }
-    75% {
-        opacity: 50%;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
