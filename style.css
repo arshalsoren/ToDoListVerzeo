@@ -52,7 +52,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     background-color: #000018;
-    border: 1px solid #B61659;
+    border: 2px solid #B61659;
     color: #EE2A7B;
     width: 400px;
     height: fit-content;
